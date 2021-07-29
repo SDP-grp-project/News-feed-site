@@ -13,7 +13,8 @@ app.get('/',async (req,res)=>{
    const arr=[];
    const a2=[];
    const t=[]
-   const arts=[]
+   const arts=[];
+   const esaki=[]
     news.results.map(pieces=>{
   //    console.log(process.env.API_KEY)
       console.log(pieces.title)
