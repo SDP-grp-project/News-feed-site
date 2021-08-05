@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-   include('./partials/header.ejs') %> 
+<body>
+  <%-   include('./partials/nav.ejs') %>
+
+  
+<div class="container "> 
+  
+  <div class="row">
+    <div class="col-sm-6">
+     
+      <div class="card text-white " style="margin-top: 60px;background-color: #00539CFF;">
+        <div class="card-body">
+          <h5 class="card-title"><%= titles[0] %></h5>
+         
+          <a href=" <%= links[0] %>" class="btn btn-primary">Read more</a>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="col-sm-6">
+      
+     
+      <div class="card text-white " style="margin-top: 60px;background-color: #00539CFF;">
+        <div class="card-body">
+          <h5 class="card-title"><%= titles[1] %></h5>
+          
+          <a href=" <%= links[1] %>" class="btn btn-primary">Read more</a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <% for(let i=2;i<9;i=i+2){ %> 
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card text-white " style="margin-top: 30px;background-color: #00539CFF;">
+          <div class="card-body">
+            <h5 class="card-title"><%= titles[i] %></h5>
+           
+            <a href=" <%= links[i] %>" class="btn btn-primary">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card text-white " style="margin-top: 30px;background-color: #00539CFF;">
+          <div class="card-body">
+            <h5 class="card-title"><%= titles[i+1] %></h5>
+          
+            <a href=" <%= links[i+1] %>" class="btn btn-primary">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% } %>
+
+
+
+</div>
+
+
+</body>
+</html>
